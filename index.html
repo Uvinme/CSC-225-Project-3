@@ -4,7 +4,6 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
         <!-- Bootstrap CSS -->
         <link
             rel="stylesheet"
@@ -13,16 +12,40 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Bookstore By Uvin</title>
+        <title>Bookstore By Uvin</title>    
     </head>
 
-    <body class="pt-5"> <!--pt for padding top-->
+    <body> 
+    <!-- Header -->       
+        <div class="header">       
+            <h1 id="logo"><a href=""><img src="images/study.svg" alt="logo" /> Bookstore</a></h1>
+            <br><br><br><br>
+          </div>
+    <div class="c-wrapper">
       <div class="container">
         <div class="row">
-            <div class="col"><ul id="Books-list" class="list-group"></ul></div>
-            <div class="col"><div id="cover"></div></div>  
+            <div class="col"><h2>Book List</h2><ul id="Book-list" class="list-group"></ul></div>
+            <div class="col"><h3>Book Details</h3>
+                <div class="card" style="width: 25rem; height: auto;"> 
+                <div class="card-body">
+                  <h3 id="title" class="card-title">Title </h3>
+                  <h4 id="author" class="card-subtitle mb-2 text-muted">author</h4>
+                  <p id="cover"  class="card-text">.</p>
+                  <p id="country"  class="card-text">.</p>
+                  <p id="language" class="card-text">.</p>
+                  <p id="pages" class="card-text">.</p>
+                  <p id="year" class="card-text">.</p>
+                
+                  <a id="link">Book link</a>
+                </div>
+              </div></div>            
         </div>
       </div>
+    </div>
+      <footer>
+        <p>Contact Us:<br>
+        <a href="mailto:Bookshp@yopmail.com">Bookshp@yopmail.com</a></p>
+      </footer>
     
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -39,5 +62,6 @@
         ></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </body>
 </html>
